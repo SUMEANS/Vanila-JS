@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bgFilm{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    
+}
+
+.bgImg{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    animation: fadeIn 3s ease-in-out;
+}
+
+body,html{
+    margin:0px;
+    height: 100%;
+    width:100%;
+    font-family:'Sansita Swashed', cursive;
+}
+
+body{
+    background-color: dimgray;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.clock{
+    font-size: 5em;
+    margin: 0px 15px;
+  
+}
+
+.clock h1{
+    margin:0px;
+}
+
+.ffform input::placeholder{
+    color: rgba(0, 0, 0, 0.8);
+    font-family:'Sansita Swashed', cursive;
+    text-align: center;
+}
+
+.ffform input:focus{
+    outline: none;
+}
+
+.ffform input,
+.greeting{
+    margin: 0;
+    font-size: 4ch;
+    background: none;
+    color: rgba(0, 0, 0, 0.8);
+    border:none;
+    border-bottom: solid 2px  rgba(55, 0, 255, 0.7);    
+}
+
+
+
+
+.form,
+.greeting {
+    display: none; 
+    margin-top: 40px;
+}
+
+.showing{
+    display: block;
+}
+
+
+
+
+
+.js-toDoList{
+    list-style: none;
+    padding: 0px 15px;
+}
+
+.js-toDoList li{
+    display:flex;
+    align-items: center;
+    font-size: 2.3ch;
+    border-bottom: solid 2px  rgba(255, 0, 221, 0.7);
+
+}
+
+
+.js-toDoList button{
+    border:none;
+    background: none;
+    color: white;
+    padding: 0;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+
+.toDoSection{
+    width:340px;
+    margin-top: 40px;
+}
+.js-toDoForm{
+    display:flex;
+    justify-content: center;
+}
+
+
+.js-toDoForm input{
+    font-size: 2.5ch;
+    display: block;
+
+      
+}
+
